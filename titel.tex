@@ -1,0 +1,73 @@
+\fancypagestyle{titlepage}{
+  \newgeometry{
+    left=3.5cm,
+    right=2.5cm,
+    bottom=2.0cm,
+    top=2cm,
+    %
+    % schiebt den regulären Seiteninhalt nach unten
+    % ansonsten schneiden sich header und Inhalt
+    headheight=55pt,
+    %
+    % header und footer mit in die Maße einbeziehen
+    % die oben angegebenen Maße sind also ein rein weißer Bereich am Rand der Seite
+    includehead,includefoot
+  }
+
+  \fancyhf{}
+  \renewcommand{\headrulewidth}{0pt}
+  \renewcommand{\footrulewidth}{0pt}
+ 
+  \lhead{\includegraphics{img/thm_header.png}}
+ 
+  \rhead{\includegraphics{img/stdpl_header.png}}
+  \lfoot{}
+  \rfoot{}
+
+  % \fancyhf{}
+  % \fancyfoot[R]{\footnotesize Page \thepage}
+  % \fancyhead[R]{\includegraphics{img/thm_header.png}}
+}
+
+\begin{titlepage}
+  \thispagestyle{titlepage}
+  \begin{center}
+    \vspace*{0.5cm}
+    \LARGE{PRAXISPHASENBERICHT VORLAGE}
+    \vspace{1cm}
+  \end{center}
+  \vspace*{1.5cm}
+  \noindent \large{Thema:} \\
+  \noindent\Large{\textbf{WUNDERSCHÖNER TITEL DIESES BERICHTES}} 
+  \vspace{1.5cm}
+
+  % Studenten Tabelle 
+  \normalsize
+  \noindent\begin{tabular}{@{}p{3.2cm} l@{}}
+    Vorgelegt von: & MAX MUSTERMAN  \\
+                   & MUSTERAßE 6 \\
+                   & 06069 MUSTERSTADT \\ 
+                   & \\
+    Matrikelnummer & 000000 
+  \end{tabular}
+  % 1cm Abstand
+  \vspace{1cm}
+
+  % Betreuer Tabelle       
+  \noindent Eingereicht bei\\
+  \noindent\begin{tabular}{@{}p{3.2cm} l@{}}
+    Hochschulbetreuer: & Prof. Dr. MAX MUSTER PROF \\
+    Fachbetreuer: & MUSTERBETREUER  \\
+  \end{tabular}
+  % 1cm Abstand
+  \vspace{1cm}
+  
+  \noindent\begin{tabular}{@{}p{3.2cm} l@{}}
+    Unternehmen: & ABC gmbh \\
+                 & \\
+    Eingereicht am: & \today{} \\
+  \end{tabular}
+
+
+
+\end{titlepage}
